@@ -22,15 +22,15 @@ int findgas(struct gas *pos)
 			}
 		}
 	}
-	if (find == 0) return 0;//Ò»¸ö¼ÓÓÍÕ¾¶¼Ã»ÕÒµ½->ÄÜµ½ÖÕµã/²»ÄÜµ½ÖÕµã
-	if (change == 0) return 1;//ÕÒµ½ÁË£¬µ«ÊÇÈ«¶¼ÊÇ±ÈÏÖÔÚËù´¦µÄÎ»ÖÃ¹óµÄ->ÄÜµ½ÖÕµã/²»ÄÜµ½ÖÕµã
-	return 2;//ÕÒµ½²¢¸Ä±äÁËsmaller
+	if (find == 0) return 0;//ä¸€ä¸ªåŠ æ²¹ç«™éƒ½æ²¡æ‰¾åˆ°->èƒ½åˆ°ç»ˆç‚¹/ä¸èƒ½åˆ°ç»ˆç‚¹
+	if (change == 0) return 1;//æ‰¾åˆ°äº†ï¼Œä½†æ˜¯å…¨éƒ½æ˜¯æ¯”ç°åœ¨æ‰€å¤„çš„ä½ç½®è´µçš„->èƒ½åˆ°ç»ˆç‚¹/ä¸èƒ½åˆ°ç»ˆç‚¹
+	return 2;//æ‰¾åˆ°å¹¶æ”¹å˜äº†smaller
 }
 int main()
 {
 	int i, judge;
 	double money = 0, gasum, maxdis;
-	scanf_s("%lf%lf%lf%lf%d", &d1, &c, &d2, &ps, &n);
+	scanf("%lf%lf%lf%lf%d", &d1, &c, &d2, &ps, &n);
 	ori.d = 0; ori.num = -1; ori.p = ps;
 	for (i = 0; i < n; i++) {
 		scanf_s("%lf%lf", &gastation[i].d, &gastation[i].p);
