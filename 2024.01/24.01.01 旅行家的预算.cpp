@@ -33,7 +33,7 @@ int main()
 	scanf("%lf%lf%lf%lf%d", &d1, &c, &d2, &ps, &n);
 	ori.d = 0; ori.num = -1; ori.p = ps;
 	for (i = 0; i < n; i++) {
-		scanf_s("%lf%lf", &gastation[i].d, &gastation[i].p);
+		scanf("%lf%lf", &gastation[i].d, &gastation[i].p);
 		gastation[i].num = i;
 	}
 	smaller = &ori; gasum = 0;
